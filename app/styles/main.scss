@@ -208,6 +208,15 @@ h3 {
     z-index: -1;
 }
 
+
+
+
+
+
+
+
+// About section start.
+
 .about-section {
     height: 780px;
     width: 100%;
@@ -236,6 +245,111 @@ h3 {
         }
     }
 
+    .view {
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        cursor: default;
+    }
+
+    .view .mask, .view .content {
+        margin-top: 90px;
+        width: 300px;
+        height: 200px;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+    }
+
+    .view img {
+        width: 300px;
+        height: auto;
+        display: block;
+        position: relative
+    }
+
+    .view h2 {
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        font-size: 33px;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.8);
+        margin: 20px 0 0 0
+    }
+
+    .view a.info {
+        display: inline-block;
+        text-decoration: none;
+        padding: 14px 85px;
+        background: rgb(86, 145, 137);
+        color: #fff;
+        text-transform: uppercase;
+        margin-top: 33px;
+
+        &:hover {
+            box-shadow: 0 0 5px #000
+        }
+    }
+
+
+    //Images
+
+    .view-second img {  
+        transition: all 0.2s ease-in;
+        -webkit-transition: all 0.2s ease-in;
+    }
+    .view-second .mask { 
+        background-color: rgba(12, 19, 27, 0.6); 
+        width: 300px;
+        padding: 150px;
+        height: 300px;
+        opacity: 0;
+        transform: translate(265px, 145px) rotate(45deg);
+        -webkit-transform: translate(265px, 145px) rotate(45deg);
+        transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+    }
+    .view-second h2 {
+        background: transparent;
+        margin: 20px 40px 0px 40px;
+       -webkit-transform: translate(200px, -200px);
+        transform: translate(200px, -200px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .view-second a.info { 
+        transform: translate(0px, 400px);
+        -webkit-transform: translate(0px, 400px);
+        transition: all 0.2s 0.1s ease-in-out;
+        -webkit-transition: all 0.2s 0.1s ease-in-out;
+    } 
+
+    /* */
+
+    .view-second:hover .mask { 
+        opacity:1; 
+        transform: translate(0px, -90px) rotate(90deg);
+        -webkit-transform: translate(0px, -90px) rotate(90deg);
+    }
+
+    .view-second:hover h2 { 
+        transform: translate(0px,0px);
+        -webkit-transform: translate(0px,0px);
+        transition-delay: 0.3s; 
+        -webkit-transition-delay: 0.3s; 
+    }
+
+    .view-second:hover a.info { 
+        transform: translate(0px,0px); 
+        -webkit-transform: translate(0px,0px); 
+        transition-delay: 0.5s;
+        -webkit-transition-delay: 0.5s;
+    }
+
     .about-owner {
         width: 300px;
         height: 300px;
@@ -246,41 +360,6 @@ h3 {
         text-align: center;
         position: relative;
         overflow: hidden;
-        background-color: rgb(86, 145, 137);
-
-        .about-owner-image {
-            width: 100%;
-            height: 100%;
-            -webkit-transition: all .25s ease;
-            -moz-transition: all .25s ease;
-            -o-transition: all .25s ease;
-            -ms-transition: all .25s ease;
-            transition: all .25s ease;
-
-            &:hover {
-                -webkit-transform:scale(1.25); /* Safari and Chrome */
-                -moz-transform:scale(1.25); /* Firefox */
-                -ms-transform:scale(1.25); /* IE 9 */
-                -o-transform:scale(1.25); /* Opera */
-                transform:scale(1.25);
-            }
-        }
-
-        .about-owner-title {
-            visibility: hidden;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            color: white;
-            font-size: 2em;
-            font-weight: bold;
-
-            &:hover {
-                visibility: show;
-            }
-        }
     }
 
     .about-bar {
@@ -294,24 +373,6 @@ h3 {
         position: relative;
         overflow: hidden;
         cursor: pointer;
-
-        .about-bar-image {
-            width: 100%;
-            height: 100%;
-            -webkit-transition: all .25s ease;
-            -moz-transition: all .25s ease;
-            -o-transition: all .25s ease;
-            -ms-transition: all .25s ease;
-            transition: all .25s ease;
-
-            &:hover {
-                -webkit-transform:scale(1.25); /* Safari and Chrome */
-                -moz-transform:scale(1.25); /* Firefox */
-                -ms-transform:scale(1.25); /* IE 9 */
-                -o-transform:scale(1.25); /* Opera */
-                transform:scale(1.25);
-            }
-        }
     }
 
     .about-roastery {
@@ -324,24 +385,6 @@ h3 {
         text-align: center;
         position: relative;
         overflow: hidden;
-
-        .about-roastery-image {
-            width: 100%;
-            height: 100%;
-            -webkit-transition: all .25s ease;
-            -moz-transition: all .25s ease;
-            -o-transition: all .25s ease;
-            -ms-transition: all .25s ease;
-            transition: all .25s ease;
-
-            &:hover {
-                -webkit-transform:scale(1.25); /* Safari and Chrome */
-                -moz-transform:scale(1.25); /* Firefox */
-                -ms-transform:scale(1.25); /* IE 9 */
-                -o-transform:scale(1.25); /* Opera */
-                transform:scale(1.25);
-            }
-        }
     }
 }
 

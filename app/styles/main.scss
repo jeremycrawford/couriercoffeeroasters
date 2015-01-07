@@ -35,6 +35,11 @@ h3 {
     display: inline-block;
     width: 30px;
     margin-right: 15px;
+
+    &:hover {
+        opacity: 0;
+    }
+
 }
 
 .header-title {
@@ -201,6 +206,7 @@ h3 {
         width: 25%;
         height: auto;
         margin-top: 5%;
+
     }
 }
     
@@ -305,7 +311,7 @@ h3 {
         display: inline-block;
         text-decoration: none;
         padding: 16px 85px;
-        background: rgb(86, 145, 137);
+        background: rgb(99, 198, 163);
         color: #fff;
         text-transform: uppercase;
         margin-top: 35px;
@@ -421,7 +427,7 @@ h3 {
 
         .about-bean-title {
             margin-top: 50px;
-            font-size: 80px;
+            font-size: 55px;
             margin-left: 80px;
             color: white;
             text-transform: uppercase;
@@ -432,8 +438,7 @@ h3 {
             font-size: 16px;
             font-weight: 200;
             margin-left: 80px;
-            color: white;
-            text-transform: uppercase;
+            color: grey;
             letter-spacing: 1px;
         }
     }
@@ -470,7 +475,7 @@ h3 {
         padding-top: 20px;
         padding-bottom: 20px;
         text-align: center;
-        background-color: rgb(86, 145, 137);
+        background-color: rgb(99, 198, 163);
 
         .menu-title {
             font-size: 25px;
@@ -519,7 +524,7 @@ h3 {
 .page-footer {
     height: 500px;
     width: 100%;
-    background-color: rgb(86, 145, 137);
+    background-color: rgb(99, 198, 163);
     position: relative;
     color: white;
 
@@ -531,8 +536,63 @@ h3 {
         height: 100%;
     }
 
-    .copyright {
+    .bar-contact {
+        width: 300px;
+        height: 185px;
         display: inline-block;
+        margin-top: 105px;
+        margin-left: 105px;
+
+        .bar-title {
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .bar-info {
+            font-size: 13px;
+            letter-spacing: 0.5px;
+            line-height: 20px;
+        }
+    }
+
+    .roastery-contact {
+        width: 300px;
+        height: 165px;
+        margin-left: 105px;
+
+        .roastery-title {
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .roastery-info {
+            font-size: 13px;
+            letter-spacing: 0.5px;
+            line-height: 20px;
+        }
+    }
+
+    .copyright {
+        margin-left: 105px;
+        font-size: 11px;
+        letter-spacing: 1px;
+        display: inline-block;
+    }
+
+    .author {
+        font-size: 11px;
+        letter-spacing: 1px;
+        float: right;
+        display: inline-block;
+        margin-right: 65px;
+        padding-top: 4px;
+        position: relative;
+        text-decoration: none;
     }
 }
 

@@ -234,6 +234,7 @@ h3 {
     height: auto;
     width: 100%;
     position: relative;
+    background-color: rgb(236, 239, 238);
 
     .about-header {
         position: relative;
@@ -245,7 +246,7 @@ h3 {
         .about-title {
             font-size: 25px;
             font-weight: bold;
-            color: rgb(86, 145, 137);
+            color: rgb(119, 135, 145);
             letter-spacing: 1px;
         }
 
@@ -311,7 +312,7 @@ h3 {
         display: inline-block;
         text-decoration: none;
         padding: 16px 85px;
-        background: rgb(99, 198, 163);
+        background: rgb(119, 135, 145);
         color: #fff;
         text-transform: uppercase;
         margin-top: 35px;
@@ -466,36 +467,78 @@ h3 {
     position: relative;
     text-align: center;
     padding-bottom: 100px;
+    background-color: rgb(236, 239, 238);
 
     .menu-header {
         position: relative;
         padding-top: 30px;
         width: 100%;
         height: auto;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 60px;
         text-align: center;
-        background-color: rgb(99, 198, 163);
 
         .menu-title {
             font-size: 25px;
             font-weight: bold;
-            color: white;
+            color: grey;
             letter-spacing: 1px;
             margin: 0 auto;
         }
     }
 
     .menu-table {
-        background-color: gainsboro;
         padding: 50px;
         width: 70%;
         height: 780px;
         margin: 0 auto;
-        margin-top: 60px;
-        outline: 1px solid rgba(86, 145, 137, .5);
-        outline-offset: -35px;
+        margin-top: 40px;
 
+        .main-menu {
+            width: 100%;
+
+            .menu-header {
+                width: 100%;
+                height: 35px;
+                background-color: rgb(119, 135, 145);
+                color: white;
+                font-size: 12px;
+                letter-spacing: 1px;
+
+                .food-menu-header {
+                    width: 33%;
+                    text-align: center;
+                    border-right: 2px solid white;
+                }
+
+                .coffee-menu-header {
+                    width: 33%;
+                    text-align: center;
+                    border-right: 2px solid white;
+                }
+
+                .tea-menu-header {
+                    width: 33%;
+                    text-align: center;
+                    border-left: 2px solid white;
+                }
+            }
+
+            .table-body {
+                padding: 10px;
+            }
+
+            .prices {
+                text-align: right;
+                color: darkgrey;
+                font-weight: 500;
+                padding-right: 10px
+            }
+
+            .items  {
+                padding-left: 10px;
+                font-weight: 500;
+            }
+        }
     }
 
 
@@ -524,7 +567,7 @@ h3 {
 .page-footer {
     height: 500px;
     width: 100%;
-    background-color: rgb(99, 198, 163);
+    background-color: rgb(119, 135, 145);
     position: relative;
     color: white;
 

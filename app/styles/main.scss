@@ -233,48 +233,87 @@ h3 {
         -ms-filter: sepia(.5);
     }
 
-    .bar-main-contact {
-        width: 300px;
-        height: 185px;
+    .bar-main-container {
+        position: relative;
         display: inline-block;
-        margin-left: 85px;
         float: left;
+        width: 300px;
+        margin-left: 85px;
+        height: 185px;
+        border: 1px solid rgba(22,22,22,.2);
 
-        .bar-main-title {
-            text-transform: uppercase;
-            font-size: 14px;
-            font-weight: 600;
-            letter-spacing: 1px;
-        }
+        .bar-main-contact {
 
-        .bar-main-info {
-            font-size: 13px;
-            letter-spacing: 0.5px;
-            line-height: 20px;
+            .bar-main-title {
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                text-align: center;
+                background-color: rgb(88,148,154);
+                color: white;
+                padding: 15px;
+            }
+
+            .bar-main-info {
+                padding: 10px;
+                font-size: 13px;
+                letter-spacing: 0.5px;
+                line-height: 20px;
+            }
         }
     }
 
-    .roastery-main-contact {
-        width: 300px;
-        height: 185px;
+    .roastery-main-container {
+        position: relative;
         display: inline-block;
-        margin-left: 85px;
         float: left;
+        width: 300px;
+        margin-left: 50px;
+        height: 185px;
+        border: 1px solid rgba(22,22,22,.2);
 
-        .roastery-main-title {
-            text-transform: uppercase;
-            font-size: 14px;
-            font-weight: 600;
-            letter-spacing: 1px;
-        }
+        .roastery-main-contact {
 
-        .roastery-main-info {
-            font-size: 13px;
-            letter-spacing: 0.5px;
-            line-height: 20px;
+            .roastery-main-title {
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                text-align: center;
+                background-color: rgb(88,148,154);
+                color: white;
+                padding: 15px;
+            }
+
+            .roastery-main-info {
+                padding: 10px;
+                font-size: 13px;
+                letter-spacing: 0.5px;
+                line-height: 20px;
+            }
         }
     }
 
+    .about-copy-container {
+        float: right;
+        margin-right: 85px;
+        width: 500px;
+        height: 185px;
+        text-align: left;
+        padding-left: 10px;
+
+        .about-copy {
+            font-size: 13px;
+            font-weight: 200;
+            color: grey;
+            letter-spacing: 1px;
+
+            @media only screen and (max-width : 615px) {
+                display: none;
+            }
+        }
+    }
 }
 
 
@@ -304,19 +343,6 @@ h3 {
             font-weight: bold;
             color: rgb(88,148,154);
             letter-spacing: 1px;
-        }
-
-        .about-copy {
-            font-size: 13px;
-            font-weight: 200;
-            margin-left: 150px;
-            margin-right: 150px;
-            color: grey;
-            letter-spacing: 1px;
-
-            @media only screen and (max-width : 615px) {
-                display: none;
-            }
         }
     }
 

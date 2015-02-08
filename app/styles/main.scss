@@ -333,6 +333,224 @@ h3 {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// All page transitions
+
+.site-wrap {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.push-wrap {
+  -webkit-transition: all 300ms ease 0;
+  -moz-transition: all 300ms ease 0;
+  -o-transition: all 300ms ease 0;
+  transition: all 300ms ease 0;
+  
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.show-contact .push-wrap {
+  -webkit-transform: translate(100%, 0);
+  -moz-transform: translate(100%, 0);
+  -ms-transform: translate(100%, 0);
+  -o-transform: translate(100%, 0);
+  transform: translate(100%, 0);
+  
+  -webkit-transform: translate3d(100%, 0, 0);
+  -moz-transform: translate3d(100%, 0, 0);
+  -ms-transform: translate3d(100%, 0, 0);
+  -o-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Contact Page 
+
+.contact {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(42,42,42);
+    color: black;
+}
+
+.contact-content {
+    height: 500px;
+    width: 100%;
+    background-color: rgb(42,42,42);
+    position: relative;
+    color: white;
+
+
+
+    .bar-contact {
+        width: 78%;
+        height: 185px;
+        display: inline-block;
+        margin-top: 10%;
+        margin-left: 10%;
+
+        .contact-page-header {
+            width: 100%;
+            height: 2px;
+            background-color: white;
+            margin-bottom: 5%;
+        }
+
+        .bar-title {
+            text-transform: uppercase;
+            font-size: 1.7em;
+            font-weight: 500;
+            letter-spacing: 2px;
+            line-height: 20px
+        }
+
+        .bar-info {
+            float: left;
+            font-size: 1.2em;
+            letter-spacing: 1.5px;
+            font-weight: 100;
+            line-height: 25px;
+        }
+
+    }
+
+    .google-map {
+        float: right;
+        display: inline-block;
+        border: none;
+        width: 40%;
+        height: 100%;
+        margin-top: -2.5%;
+    }
+
+    .roastery-contact {
+        width: 78%;
+        height: 185px;
+        display: inline-block;
+        margin-top: 10%;
+        margin-left: 10%;
+
+        .roastery-title {
+            text-transform: uppercase;
+            font-size: 1.7em;
+            font-weight: 500;
+            letter-spacing: 2px;
+            line-height: 20px
+        }
+
+        .roastery-info {
+            float: left;
+            font-size: 1.2em;
+            letter-spacing: 1.5px;
+            font-weight: 100;
+            line-height: 25px;
+        }
+    }
+
+    .copyright {
+        margin-left: 85px;
+        font-size: 11px;
+        letter-spacing: 1px;
+        display: inline-block;
+    }
+
+    .author {
+        font-size: 11px;
+        letter-spacing: 1px;
+        float: right;
+        display: inline-block;
+        margin-right: 65px;
+        padding-top: 4px;
+        position: relative;
+        text-decoration: none;
+    }
+}
+
+#close-contact-button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 30px;
+    height: 36px;
+    float: right;
+    margin: 15px;
+    z-index: 100;
+    margin-top: 36px;
+    margin-right: 36px;
+
+    .x-line-one {
+        height: 38px;
+        width: 2px;
+        margin-left: 13px;
+        background-color: white;
+        transform: rotate(45deg);
+        -ms-transform: rotate(45deg); /* IE 9 */
+        -webkit-transform: rotate(45deg); /* Safari and Chrome */
+        z-index: 1;
+    }
+
+    .x-line-two {
+        height: 38px;
+        width: 2px;
+        background-color: white;
+        transform: rotate(90deg);
+        -ms-transform: rotate(90deg); /* IE 9 */
+        -webkit-transform: rotate(90deg); /* Safari and Chrome */
+        z-index: 2;
+    }
+
+    &:hover {
+        opacity: .5;
+    }
+}
+
     // .bar-main-container {
     //     position: relative;
     //     display: inline-block;
@@ -726,101 +944,6 @@ h3 {
     }
 
 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.page-footer {
-    height: 500px;
-    width: 100%;
-    background-color: rgb(42,42,42);
-    position: relative;
-    color: white;
-
-    .google-map {
-        float: right;
-        display: inline-block;
-        border: none;
-        width: 40%;
-        height: 100%;
-    }
-
-    .bar-contact {
-        width: 300px;
-        height: 185px;
-        display: inline-block;
-        margin-top: 105px;
-        margin-left: 105px;
-
-        .bar-title {
-            text-transform: uppercase;
-            font-size: 14px;
-            font-weight: 600;
-            letter-spacing: 1px;
-        }
-
-        .bar-info {
-            font-size: 13px;
-            letter-spacing: 0.5px;
-            line-height: 20px;
-        }
-    }
-
-    .roastery-contact {
-        width: 300px;
-        height: 165px;
-        margin-left: 105px;
-
-        .roastery-title {
-            display: inline-block;
-            text-transform: uppercase;
-            font-size: 14px;
-            font-weight: 600;
-            letter-spacing: 1px;
-        }
-
-        .roastery-info {
-            font-size: 13px;
-            letter-spacing: 0.5px;
-            line-height: 20px;
-        }
-    }
-
-    .copyright {
-        margin-left: 105px;
-        font-size: 11px;
-        letter-spacing: 1px;
-        display: inline-block;
-    }
-
-    .author {
-        font-size: 11px;
-        letter-spacing: 1px;
-        float: right;
-        display: inline-block;
-        margin-right: 65px;
-        padding-top: 4px;
-        position: relative;
-        text-decoration: none;
-    }
 }
 
 

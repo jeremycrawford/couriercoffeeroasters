@@ -1,10 +1,10 @@
 
 
-// Normal Clicks
+// Contact Page
 
 $(function() {
   $('#header-contact-button').click(function() {
-    $('body').toggleClass('show-contact');
+    $('body').toggleClass('show-contact-page');
      return false;
   });
   
@@ -12,11 +12,30 @@ $(function() {
 
 $(function() {
   $('#close-contact-button').click(function() {
-    $('body').toggleClass('show-contact');
+    $('body').toggleClass('show-contact-page');
      return false;
   });
   
 });
+
+// Drink Menu Page
+
+// $(function() {
+//   $('.menu-drinks').click(function() {
+//     $('body').toggleClass('show-drink-menu-page');
+//      return false;
+//   });
+  
+// });
+
+// $(function() {
+//   $('#close-drink-menu-page-button').click(function() {
+//     $('body').toggleClass('show-drink-menu-page');
+//      return false;
+//   });
+  
+// });
+
 
 // $(function() {
 //   $('#exit-contact-container').click(function() {

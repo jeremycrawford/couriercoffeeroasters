@@ -1,57 +1,96 @@
 
 
-// Contact Page
 
-$(function() {
-  $('#header-contact-button').click(function() {
-    $('body').toggleClass('show-contact-page');
-     return false;
-  });
-  
+
+
+
+
+// Contact Page button
+
+$( "#header-contact-button" ).click(function() {
+  $( "#contact-page" ).slideToggle( { direction: "left" }, 25000 );
 });
 
-$(function() {
-  $('#close-contact-button').click(function() {
-    $('body').toggleClass('show-contact-page');
-     return false;
-  });
-  
+
+// Contact Page Exit Button
+
+$( "#close-contact-page" ).click(function() {
+  $( "#contact-page" ).slideToggle( { direction: "right" }, 25000 );
 });
 
-// Drink Menu Page
+// Drink Menu Page Button
 
-// $(function() {
-//   $('.menu-drinks').click(function() {
-//     $('body').toggleClass('show-drink-menu-page');
-//      return false;
+$( "#menu-drinks" ).click(function() {
+  $( "#drink-menu-page" ).slideToggle( { direction: "left" }, 25000 );
+});
+
+
+$( "#close-drink-menu-page-button" ).click(function() {
+  $( "#drink-menu-page" ).slideToggle( { direction: "right" }, 25000 );
+});
+
+
+
+
+
+
+
+
+
+
+// $(document).ready(function() {
+//   $("#header-contact-button").click(function() {
+//     $('#contact-page').slideToggle( "slide", { direction: "left" }, 8000 );
 //   });
-  
-// });
 
-// $(function() {
-//   $('#close-drink-menu-page-button').click(function() {
-//     $('body').toggleClass('show-drink-menu-page');
-//      return false;
+//   $("#close-contact-page").click(function() {
+//     $('#contact-page').toggle();
 //   });
-  
 // });
 
 
-// $(function() {
-//   $('#exit-contact-container').click(function() {
-//     $('body').toggleClass('show-nav');
-//      return false;
-//   });
-  
+// $("#header-contact-button").click(function () {
+ 
+//     // Set the effect type
+//     var effect = 'slide';
+ 
+//     // Set the options for the effect type chosen
+//     // var options = { direction: 'right' };
+ 
+//     // Set the duration (default: 400 milliseconds)
+//     var duration = 700;
+ 
+//     $("#contact-page").toggle(effect, duration);
 // });
 
 
-// Toggle with hitting of ESC
-// $(document).keyup(function(e) {
-//   if (e.keyCode == 27) {
-//    $('body').toggleClass('show-contact');
-//   }
+// $("#close-contact-page").click(function () {
+ 
+//     // Set the effect type
+//     var effect = 'slide';
+ 
+//     // Set the options for the effect type chosen
+//     // var options = { direction: 'left' };
+ 
+//     // Set the duration (default: 400 milliseconds)
+//     var duration = 700;
+ 
+//     $("#contact-page").toggle(effect, duration);
 // });
 
-//Exit Buttons
 
+
+
+// $(".myButton").click(function () {
+
+//     // Set the effect type
+//     var effect = 'slide';
+
+//     // Set the options for the effect type chosen
+//     var options = { direction: $('.mySelect').val() };
+
+//     // Set the duration (default: 400 milliseconds)
+//     var duration = 500;
+
+//     $('#myDiv').toggle(effect, options, duration);
+// });

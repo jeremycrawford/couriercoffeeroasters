@@ -96,7 +96,7 @@ h3 {
             background-color: rgb(42,42,42);
             color: white;
 
-            .menu-drinks {
+            #menu-drinks {
                 visibility: visible;
             }
 
@@ -143,7 +143,7 @@ h3 {
     }
 
     .about-menu-wholesale, 
-    .menu-drinks {
+    #menu-drinks {
         cursor: pointer;
         font-weight: 200;
         visibility: hidden;
@@ -293,6 +293,41 @@ h3 {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .main {
     position: relative;
     max-width: 100%;
@@ -349,57 +384,30 @@ h3 {
 
 
 
-// All page transitions
 
-.site-wrap {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-}
 
-.push-wrap {
-  -webkit-transition: all 300ms ease 0;
-  -moz-transition: all 300ms ease 0;
-  -o-transition: all 300ms ease 0;
-  transition: all 300ms ease 0;
-  
-  -webkit-transform: translate(0, 0);
-  -moz-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
-  transform: translate(0, 0);
-  
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
 
-.show-contact-page .push-wrap {
-  -webkit-transform: translate(100%, 0);
-  -moz-transform: translate(100%, 0);
-  -ms-transform: translate(100%, 0);
-  -o-transform: translate(100%, 0);
-  transform: translate(100%, 0);
-  
-  -webkit-transform: translate3d(100%, 0, 0);
-  -moz-transform: translate3d(100%, 0, 0);
-  -ms-transform: translate3d(100%, 0, 0);
-  -o-transform: translate3d(100%, 0, 0);
-  transform: translate3d(100%, 0, 0);
-}
+
+
+
+
+
+
+
+
 
 // Contact Page 
 
-.contact-page {
+#contact-page {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: fixed;
+    display: none;
     top: 0;
     left: 0;
     background: rgb(42,42,42);
     color: black;
+    z-index: 100;
 }
 
 .contact-content {
@@ -495,7 +503,7 @@ h3 {
     }
 }
 
-#close-contact-button {
+#close-contact-page {
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -553,13 +561,14 @@ h3 {
 
 // Drink Menu Page
 
-.drink-menu-page {
+#drink-menu-page {
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    display: none;
+    z-index: 200;
     position: fixed;
     top: 0;
     left: 0;
-    background: rgb(42,42,42);
     color: black;
 }
 
@@ -579,7 +588,7 @@ h3 {
         height: 38px;
         width: 2px;
         margin-left: 13px;
-        background-color: white;
+        background-color: rgb(42,42,42);
         transform: rotate(45deg);
         -ms-transform: rotate(45deg); /* IE 9 */
         -webkit-transform: rotate(45deg); /* Safari and Chrome */
@@ -589,7 +598,7 @@ h3 {
     .x-line-two {
         height: 38px;
         width: 2px;
-        background-color: white;
+        background-color: rgb(42,42,42);
         transform: rotate(90deg);
         -ms-transform: rotate(90deg); /* IE 9 */
         -webkit-transform: rotate(90deg); /* Safari and Chrome */
@@ -599,6 +608,92 @@ h3 {
     &:hover {
         opacity: .5;
     }
+}
+
+.menu-section {
+    height: auto;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding-bottom: 100px;
+    background-color: rgb(236, 239, 238);
+
+    .menu-header {
+        position: relative;
+        padding-top: 30px;
+        width: 100%;
+        height: auto;
+        padding-top: 60px;
+        text-align: center;
+
+        .menu-title {
+            font-size: 35px;
+            font-weight: bold;
+            color: black;
+            letter-spacing: 1px;
+            margin: 45px auto;
+        }
+    }
+
+    .menu-table {
+        padding: 50px;
+        width: 70%;
+        height: 780px;
+        margin: 0 auto;
+        margin-top: 40px;
+
+        .main-menu {
+            width: 100%;
+
+            .menu-header {
+                width: 100%;
+                height: 35px;
+                background-color: rgb(42,42,42);
+                color: white;
+                font-size: 12px;
+                letter-spacing: 1px;
+
+                .food-menu-header {
+                    width: 33%;
+                    text-align: center;
+                    border-right: 2px solid white;
+                    font-weight: 300;
+                }
+
+                .coffee-menu-header {
+                    width: 33%;
+                    text-align: center;
+                    border-right: 2px solid white;
+                    font-weight: 300;
+                }
+
+                .tea-menu-header {
+                    width: 33%;
+                    text-align: center;
+                    border-left: 2px solid white;
+                    font-weight: 300;
+                }
+            }
+
+            .table-body {
+                padding: 10px;
+            }
+
+            .prices {
+                text-align: right;
+                color: darkgrey;
+                font-weight: 500;
+                padding-right: 10px
+            }
+
+            .items  {
+                padding-left: 10px;
+                font-weight: 500;
+            }
+        }
+    }
+
+
 }
 
     // .bar-main-container {
@@ -910,110 +1005,94 @@ h3 {
 
 
 
-.menu-section {
-    height: auto;
-    width: 100%;
+
+
+
+
+
+.project-container {
+    vertical-align: top;
+    margin: 20px;
     position: relative;
-    text-align: center;
-    padding-bottom: 100px;
-    background-color: rgb(236, 239, 238);
+    display: inline-block;
+    background-color: snow;
+    width: 345px;
+    height: 350px;
+    color: rgb(46, 49, 51);
 
-    .menu-header {
+    .project-photo-container {
         position: relative;
-        padding-top: 30px;
-        width: 100%;
-        height: auto;
-        padding-top: 60px;
-        text-align: center;
-
-        .menu-title {
-            font-size: 35px;
-            font-weight: bold;
-            color: black;
-            letter-spacing: 1px;
-            margin: 0 auto;
-        }
-    }
-
-    .menu-table {
-        padding: 50px;
-        width: 70%;
-        height: 780px;
         margin: 0 auto;
-        margin-top: 40px;
+        padding-top: 24px;
+        overflow: hidden;
+        width: 300px;
+        height: 220px;
+        background-image: center;
 
-        .main-menu {
-            width: 100%;
+        // iPhone
+        @media only screen and (max-width : 320px) {
+            width: 287px;
+            height: 165px;
+            position: absolute;
+        } 
 
-            .menu-header {
-                width: 100%;
-                height: 35px;
-                background-color: rgb(42,42,42);
-                color: white;
-                font-size: 12px;
-                letter-spacing: 1px;
+        .project-photo {
+            margin: 0 auto;
+            width: 300px;
+            height: auto;
 
-                .food-menu-header {
-                    width: 33%;
-                    text-align: center;
-                    border-right: 2px solid white;
-                    font-weight: 300;
-                }
-
-                .coffee-menu-header {
-                    width: 33%;
-                    text-align: center;
-                    border-right: 2px solid white;
-                    font-weight: 300;
-                }
-
-                .tea-menu-header {
-                    width: 33%;
-                    text-align: center;
-                    border-left: 2px solid white;
-                    font-weight: 300;
-                }
-            }
-
-            .table-body {
-                padding: 10px;
-            }
-
-            .prices {
-                text-align: right;
-                color: darkgrey;
-                font-weight: 500;
-                padding-right: 10px
-            }
-
-            .items  {
-                padding-left: 10px;
-                font-weight: 500;
-            }
+            // iPhone
+            @media only screen and (max-width : 320px) {
+                width: 287px;
+                position: absolute;
+            } 
         }
     }
 
+    .design-button-two {
+        cursor: pointer;
+        display: inline-block;
+        background-color: rgb(113, 195, 174);
+        width: 300px;
+        height: 50px;
+        margin: 0 auto;
+        margin-top: 58px;
+        color: white;
 
+        .design-copy {
+            font-size: 15px;
+            letter-spacing: 1px;
+            font-weight: 400;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        &:hover {
+            background-color: rgb(77, 155, 131);
+        }
+
+        // iPhone
+        @media only screen and (max-width : 320px) {
+            width: 90%;
+            margin-top: 88px;
+            margin-left: 15px;
+            margin-right: 0px;
+            color: white;
+            border: none;
+            background-color: rgb(138, 193, 186); 
+        }
+    }
+
+    /* Smartphones (portrait) ----------- */
+    @media only screen and (max-width : 320px) {
+        width: 287px;
+        height: 287px;
+        margin: 10px;
+        box-shadow: none;
+        border-radius: 0px;
+        background-color: rgba(187, 187, 187, .4);
+    } 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -1,6 +1,7 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
 
 .browsehappy {
     margin: 0.2em 0;
@@ -28,25 +29,15 @@ h3 {
     position: fixed;
     font-size: 14px;
     z-index: 10;
-    background-color: white;
-    border-bottom: 1px solid rgba(22,22,22,.1);
 }
 
-#header h1{
+#header h1 {
     font-size: 30px;
     font-weight: 400;
     text-transform: uppercase;
     color: rgba(255,255,255,0.9);
-    text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
     padding: 20px;
     background: #000;
-}
-
-.header-icon {
-    cursor: pointer;
-    display: inline-block;
-    width: 60px;
-    margin: 18px;
 }
 
 .header-title {
@@ -78,10 +69,8 @@ h3 {
     float: right;
     width: 120px;
     height: 80px;
-    color: #444;
+    color: white;
     display: inline-block;
-    background: #fff;
-    background: rgba(255,255,255,0.9);
     line-height: 80px;
     padding: 0px 20px;
     text-transform: uppercase;
@@ -89,8 +78,8 @@ h3 {
 
     &:hover {
         text-decoration: none;
-        background-color: rgb(42,42,42);
-        color: white;
+        background-color: rgba(255,255,255, .5);
+        color: black;
     }
 }
 
@@ -157,8 +146,8 @@ h3 {
 #menu:target ~ #header #navigation #link-menu,
 #blog:target ~ #header #navigation #link-blog { 
     float: right;
-    background-color: rgb(42,42,42);
-    color: #fff;
+    background-color: rgba(255,255,255, .5);
+    color: black;
 }
 
 
@@ -169,26 +158,52 @@ h3 {
 
     .home-name-container {
         position: absolute;
-        width: 100%;
-        margin-top: 17%;
+        width: 46%;
+        margin-top: 12%;
+        text-align: center;
+
+        .header-icon {
+            cursor: pointer;
+            display: inline-block;
+            width: 250px;
+        }
 
         .home-name-title {
+            width: 100%;
             margin-top: 18px;
-            font-size: 6em;
-            margin-left: 80px;
+            font-size: 4em;
             color: white;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 3px;
+            font-family: 'Open Sans Condensed', sans-serif;
+        }
+
+        .home-content-line {
+            margin: 20px auto;
+            width: 20%;
         }
 
         .home-contact {
-            font-size: 1.2em;
+            padding-left: 25px;
+            font-size: 1em;
             font-weight: 100;
-            margin-left: 85px;
             color: white;
             letter-spacing: 2px;
         }
 
+        .home-contact-button {
+            width: 25%;
+            margin: 25px auto;
+            color: white;
+            background-color: rgb(86,145,137);
+            padding: 10px;
+
+            &:hover {
+                text-decoration: none;
+                background-color: rgb(118,165,159);
+                cursor: pointer;
+            }
+        }            
     }
 
     .home-background-image {
